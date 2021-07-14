@@ -1,0 +1,12 @@
+<phpunit bootstrap="vendor/autoload.php">
+    <listeners>
+        <listener class="MyTestListener" file="MyTestListener.php">
+        </listener>
+    </listeners>
+
+    <testsuites>
+        <testsuite name="Company::App::Module_name">
+            <directory suffix="test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
